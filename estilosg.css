@@ -5,129 +5,129 @@
     --celeste: #88BDF6;
     --naranja: #FF6D1F;
     --salmon: #FFA684;
-    --azul: #172C43;}
-
-/*tipografías*/
-h1 {
-    font-family: "fredoka-bold", sans-serif;
-    font-size: 55px;
+    --azul: #172C43;
 }
 
-h2 {
-    font-family: "fredoka-medium", sans-serif;
-    font-size: 45px;
-}
-
-h3 {
-    font-family: "instrument-semibold", sans-serif;
-    font-size: 26px;
-}
-
-h4{
-    font-family: "instrument-regular", sans-serif;
-    font-size: 20px;
-}
-
-p {
-    font-family: "instrument-regular";
-    font-size: 16px;
-}
-
-/*ADOPTA HTML*/
-
-*{
+* {
     font-family: "Instrument Sans", sans-serif;
     font-size: 16px;
     margin: 0;
     padding: 0;
     color: var(--azul);
     list-style: none;
-    box-sizing: 0;}
+    box-sizing: border-box;
+}
 
-body{
-    background-color: var(--celeste);}
+header {
+    background-color: var(--salmon);
+    height: 77px;
+}
 
-header{
-    background-color: var(--salmn);
-    height: 77px;}
-
-nav{
+nav {
     display: flex;
-    gap: 25px;}
+    gap: 25px;
+}
 
-nav a{
-    text-decoration: none;}
+body {
+    background-color: var(--crema);
+}
 
-nav a:hover{
+/*tipografías*/
+
+h1, h2, h3 {
+    font-family: "Fredoka", sans-serif;
+}
+
+h1 {
+    font-size: 55px;
+    line-height: 58px;
+    color: var(--celeste);
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 45px;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 26px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+p {
+    line-height: 28px;
+    text-align: left;
+    margin-top: 0px;
+    max-width: 580px;
+}
+
+/*ADOPTA HTML*/
+
+body {
+    background-color: var(--celeste);
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:hover {
     color: #FF6D1F;
-    font-weight: 700;}
+    font-weight: 700;
+}
 
-.contenedor{
+.contenedor {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;}
+    padding: 20px;
+}
 
-h1{
-    font-family: "Fredoka", sans-serif;
-    font-size: 55px;
-    line-height: 58px;
-    color: var(--celeste);}
-
-h2{
-    font-family: "Fredoka", sans-serif;
-    font-weight: 500;
-    font-size: 45px;}
-
-h3{
-    font-family: "Fredoka", sans-serif;
-    font-weight: 600;
-    font-size: 26px;}
-
-h4{
-    font-size: 20px;}
-
-p{
-    line-height: 28px;
-    text-align: left;
-    margin-top: 0px;
-    max-width: 580px;}
-
-.adoptar{
+.adoptar {
     display: flex;
     flex-direction: column;
-    gap: 80px;}
+    gap: 80px;
+}
 
-.adopta{
+.adopta {
     background-image: url(imagenes/forma.png);
     background-repeat: no-repeat;
     background-size: 100%;
     display: flex;
     flex-direction: row;
-    gap: 48px;}
+    gap: 48px;
+}
 
-.texto{
+.texto {
     display: flex;
     flex-direction: column;
-    gap: 43px;}
+    gap: 43px;
+}
 
-.agranda{
+.agranda {
     display: flex;
     flex-direction: row;
-    gap: 48px;}
+    gap: 48px;
+}
 
-.prueba{
+.prueba {
     display: flex;
     flex-direction: column;
-    gap: 74px;} 
+    gap: 74px;
+}
 
-.botones{
+.botones {
     display: flex;
     flex-direction: row;
-    gap: 62px;}
+    gap: 62px;
+}
 
-.boton{
+.boton {
     width: 420px;
     height: 35px;
     font-size: 26px;
@@ -137,9 +137,10 @@ p{
     color: var(--crema);
     background-color: var(--naranja);
     border-radius: 50px;
-    padding: 17px;}
+    padding: 17px;
+}
 
-.boton2{
+.boton2 {
     width: 420px;
     height: 35px;
     font-size: 26px;
@@ -149,25 +150,56 @@ p{
     color: var(--crema);
     background-color: var(--naranja);
     border-radius: 50px;
-    padding: 17px;}
+    padding: 17px;
+}
 
-.texto2{
+.texto2 {
     display: flex;
     gap: 32px;
-    flex-direction: column;}
+    flex-direction: column;
+}
 
-.historias{
+.historias {
     display: flex;
     flex-direction: column;
-    gap: 32px;}
+    gap: 32px;
+}
 
-ul{
+ul {
     display: flex;
-    flex-direction: column;}
+    flex-direction: column;
+}
 
-footer{
-    background-color: var(--salmn);
+footer {
+    background-color: var(--salmon);
     height: 192px;
     display: flex;
     justify-content: space-around;
-    align-items: center;}
+    align-items: center;
+}
+
+/*denuncia*/
+
+#maincontacto {
+    background-color: var(--crema);
+}
+
+.denunciaimg {
+    display: flex;
+    flex-direction: row;
+    gap: 55px;
+    align-items: center;
+    padding: 20px;
+    align-items: flex-start;
+}
+
+.denunciatexto {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+
+
+
+
