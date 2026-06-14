@@ -34,7 +34,9 @@ body {
 
 /*tipografías*/
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: "Fredoka", sans-serif;
 }
 
@@ -91,6 +93,7 @@ nav a:hover {
 .adoptar {
     display: flex;
     flex-direction: column;
+    align-items: center;;
     gap: 80px;
 }
 
@@ -199,7 +202,66 @@ footer {
     gap: 24px;
 }
 
+.nombre-fecha-telefono {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 
+    div {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
 
+.checkbox {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
 
+/*input [type= "checkbox"] {
+    width: auto;
+    height: auto;
+}*/
 
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.info-checkbox {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    justify-content: space-between;
+}
+
+.mensaje {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 575px;
+}
+
+.denuncia {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.fotosdenuncia {
+    display: flex;
+    flex-direction: column;
+    width: 570px;
+    gap: 40px;
+    img {
+        border-radius: 50px;
+    }
+}

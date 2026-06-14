@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <title>Contacto</title>
     <link rel="stylesheet" href="estilosg.css" type="text/css">
-    <link rel="icon" href="img/logoj.jpg">
+    <link rel="icon" type="image/x-icon" href="imagenes/iconos/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -25,76 +25,88 @@
 
     <main id="maincontacto">
         <section class="denunciaimg">
-            <img src="imagenes/iconos/patita-icono.png" width="71" height="65">
-            <article class="denunciatexto">
-                <h1>Denunciá</h1>
-                <p>Si conocés un caso de maltrato, abandono o un animal en situación de riesgo,
-                    podés comunicarte con nosotros para intervenir y brindar ayuda. Toda denuncia es importante y puede
-                    marcar la diferencia en la vida de un animal. Pedimos que, al realizar una denuncia, se incluya la
-                    mayor
-                    cantidad de información posible: ubicación, fotos, descripción del estado del animal y cualquier
-                    dato
-                    relevante que ayude a actuar con mayor rapidez.</p>
-                <h3>Importante:</h3>
-                <p>Las denuncias son tratadas con responsabilidad y prioridad según la gravedad de cada caso. Con tu
-                    ayuda
-                    podemos seguir protegiendo y salvando vidas.</p>
+            <article>
+                <img src="imagenes/iconos/patita-icono.png" width="71" height="65">
+                <div class="denunciatexto">
+                    <h1>Denunciá</h1>
+                    <p>Si conocés un caso de maltrato, abandono o un animal en situación de riesgo,
+                        podés comunicarte con nosotros para intervenir y brindar ayuda. Toda denuncia es importante y
+                        puede
+                        marcar la diferencia en la vida de un animal. Pedimos que, al realizar una denuncia, se incluya
+                        la
+                        mayor
+                        cantidad de información posible: ubicación, fotos, descripción del estado del animal y cualquier
+                        dato
+                        relevante que ayude a actuar con mayor rapidez.</p>
+                    <h3>Importante:</h3>
+                    <p>Las denuncias son tratadas con responsabilidad y prioridad según la gravedad de cada caso. Con tu
+                        ayuda
+                        podemos seguir protegiendo y salvando vidas.</p>
+                </div>
+            </article>
+
+            <article class="formulario">
+                <h2>Completá el formulario</h2>
+                <p>*Campos obligatorios</p>
+                <form method="post" action="mailto:lucianacarrera2605@gmail.comsubject=Hola%luciana" target="_blank"
+                    enctype="text/plain">
+                    <div class="info-checkbox">
+                        <div class="nombre-fecha-telefono">
+                            <div>
+                                <label for="Nombreyapellido:">*Nombre y Apellido:</label>
+                                <input type="text" name="*Nombre" id="Nombreyapellido" maxlength="40"
+                                    placeholder="Ej.: Catalina" required>
+                            </div>
+                            <div>
+                                <label for="Fecha">Fecha de nacimiento</label>
+                                <input type="date" name="Nacimiento" id="nacimiento">
+                            </div>
+                            <div>
+                                <label for="Teléfono">Teléfono:</label>
+                                <input type="tel" name="Teléfono" id="Teléfono" placeholder="(000)0000-0000">
+                            </div>
+                        </div>
+
+                        <div class="denuncia">
+                            <h4>Tipo de denuncia:</h4>
+                            <div class="checkbox">
+                                <label for="Tipo de denuncia:"><input type="checkbox" name="Tipo de denuncia:"
+                                        value="Fotografía" id="Falta de alimento y/o agua">Falta de alimento y/o
+                                    agua</label>
+                                <label for="Tipo de denuncia:"><input type="checkbox" name="Tipo de denuncia:"
+                                        value="Falta de atención médica" id="Falta de atención médica">Falta de atención
+                                    médica</label>
+                                <label for="Tipo de denuncia:"><input type="checkbox" name="Tipo de denuncia:"
+                                        value="Crías desprotegidas" id="Crías desprotegidas">Crías desprotegidas</label>
+                                <label for="Tipo de denuncia:"><input type="checkbox" name="Tipo de denuncia:"
+                                        value="Maltrato físico" id="Maltrato físico">Maltrato físico</label>
+                                <label for="Tipo de denuncia:"><input type="checkbox" name="Tipo de denuncia:"
+                                        value="Explotación" id="Explotación">Explotación</label>
+                                <label for="Tipo de denuncia:"><input type="checkbox" name="Tipo de denuncia:"
+                                        value="Abandono" id="Abandono">Abandono</label>
+                                <label for=" Tipo de denuncia:"><input type="checkbox" name="Tipo de denuncia:"
+                                        value="Otro" id="Otro">Otro</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mensaje">
+                        <label for="Mensaje">Mensaje</label>
+                        <textarea name="Mensaje" id="Mensaje" maxlength="400"></textarea>
+                    </div>
+
+                    <div>
+                        <input type="reset" value="Borrar">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
             </article>
         </section>
 
-        <section class="form">
-            <h2>Completá el formulario</h2>
-            <p>*Campos obligatorios</p>
-            <form method="post" action="mailto:lucianacarrera2605@gmail.comsubject=Hola%luciana" target="_blank"
-                enctype="text/plain">
-                <div>
-                    <label for="Nombreyapellido:">*Nombre y Apellido:</label>
-                    <input type="text" name="*Nombre" id="Nombreyapellido" maxlength="40" placeholder="Ej.: Catalina"
-                        required>
-                </div>
-                <div>
-                    <label for="Fecha">Fecha de nacimiento</label>
-                    <input type="date" name="Nacimiento" id="nacimiento">
-                </div>
-                <div>
-                    <p>Tipo de denuncia:</p>
-                    <div class="checkbox">
-                        <label for="Tipo de denuncia:">Falta de alimento y/o agua<input type="checkbox"
-                                name="Tipo de denuncia:" value="Fotografía" id="Falta de alimento y/o agua"></label>
-                        <label for="Tipo de denuncia:">Abandono<input type="checkbox" name="Tipo de denuncia:"
-                                value="Abandono" id="Abandono"></label>
-                        <label for="Tipo de denuncia:">Maltrato físico<input type="checkbox" name="Tipo de denuncia:"
-                                value="Maltrato físico" id="Maltrato físico"></label>
-                        <label for="Tipo de denuncia:">Falta de atención médica<input type="checkbox"
-                                name="Tipo de denuncia:" value="Falta de atención médica"
-                                id="Falta de atención médica"></label>
-                        <label for="Tipo de denuncia:">Explotación<input type="checkbox" name="Tipo de denuncia:"
-                                value="Explotación" id="Explotación"></label>
-                        <label for="Tipo de denuncia:">Crías desprotegidas<input type="checkbox"
-                                name="Tipo de denuncia:" value="Crías desprotegidas" id="Crías desprotegidas"></label>
-                        <label for=" Tipo de denuncia:">Otro<input type="checkbox" name="Tipo de denuncia:" value="Otro"
-                                id="Otro"></label>
-                    </div>
-                </div>
-                <div>
-                    <label for="Teléfono">Teléfono:</label>
-                    <input type="tel" name="Teléfono" id="Teléfono" placeholder="(000)0000-0000">
-                </div>
-                <div>
-                    <label for="Mensaje">Mensaje</label>
-                    <textarea name="Mensaje" id="Mensaje" maxlength="400"></textarea>
-                </div>
-                <div>
-                    <input type="reset" value="Borrar">
-                    <input type="submit" value="Enviar">
-                </div>
-            </form>
-        </section>
-        <section id="fotosdenuncia">
-            <img src="imagenes/imagenes_prototipos/img_ denuncia1.jpg" alt="denuncia1">
-            <img src="imagenes/imagenes_prototipos/img_ denuncia2.jpg" alt="denuncia1">
-            <img src="imagenes/imagenes_prototipos/img_ denuncia3.jpg" alt="denuncia1">
-        </section>
+            <section class="fotosdenuncia">
+                <img src="imagenes/img/denuncia_1.jpg" alt="denuncia1">
+                <img src="imagenes/img/denuncia_2.jpg" alt="denuncia1">
+                <img src="imagenes/img/denuncia_3.jpg" alt="denuncia1">
+            </section>
     </main>
 
 
