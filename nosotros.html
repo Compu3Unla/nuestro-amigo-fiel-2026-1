@@ -1,5 +1,3 @@
-<!--ACORDATE DE AGREGAR HREF-->
-
 <!DOCTYPE html>
 <html>
 
@@ -8,6 +6,7 @@
 	<title>Nosotros</title>
 	<link rel="stylesheet" href="estilosg.css" type="text/css">
 	<link rel="icon" type="image/x-icon" href="imagenes/iconos/favicon.png">
+	<link rel="stylesheet" href="swiper/swiper-bundle.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style>
 		@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
@@ -30,10 +29,10 @@
 	</header>
 
 
-	<main>
+	<main id="main-nosotros">
 		<section id="sobre-nosotros">
 			<img src="imagenes/iconos/patita-icono.png" alt="icono de patita" width="72px" height="66px">
-			<article>
+			<article class="mision-equipo">
 				<h1>¿Quiénes somos?</h1>
 				<p>Somos una ONG formada por protectores independientes y voluntarios comprometidos con el rescate y
 					cuidado de animales callejeros, abandonados, perdidos o accidentados. Trabajamos día a día para
@@ -41,14 +40,14 @@
 					Además, promovemos la concientización y el respeto hacia los animales, fomentando el compromiso de
 					la comunidad para construir un entorno más seguro y solidario para ellos.</p>
 			</article>
-			<img src="imagenes/img/nosotros_1.jpg" alt="perro patita" width="781px" height="333px">
+			<img class="bordefotos" src="imagenes/img/nosotros_1.jpg" alt="perro patita" width="781px" height="333px">
 		</section>
 
 		<div id="trama"></div>
 
 		<section id="mision-equipo-nosotros">
 			<article>
-				<div id="mision">
+				<div class="mision-equipo">
 					<h2>Misión</h2>
 					<ul>
 						<li>
@@ -66,22 +65,44 @@
 						</li>
 					</ul>
 				</div>
-				<div id="equipo">
+				<div class="mision-equipo">
 					<h2>Equipo</h2>
 					<p>Nuestro equipo está formado por protectores independientes y voluntarios comprometidos con el
 						bienestar animal. Trabajamos unidos por el amor, el respeto y la empatía hacia cada animal
 						rescatado, acompañándolos en todo el proceso hasta encontrarles un hogar responsable.</p>
 				</div>
 			</article>
-			<article>
-				<!--carrousel-->
-			</article>
+			<div id="galeria-nosotros" class="swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img class="bordefotos" src="imagenes/img/nosotros_slide1.jpg" alt="equipo">
+					</div>
+					<div class="swiper-slide">
+						<img class="bordefotos" src="imagenes/img/nosotros_slide2.jpg" alt="equipo">
+					</div>
+					<div class="swiper-slide">
+						<img class="bordefotos" src="imagenes/img/nosotros_slide3.jpg" alt="equipo">
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
 		</section>
 	</main>
 
 	<footer>
 
 	</footer>
+	<script src="swiper/swiper-bundle.min.js"></script>
+	<script>
+		const swiper = new Swiper('#galeria-nosotros', {
+			loop: true,
+
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+		});
+	</script>
 </body>
 
 </html>
