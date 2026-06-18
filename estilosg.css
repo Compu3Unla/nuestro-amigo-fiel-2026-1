@@ -260,15 +260,24 @@ footer {
 
 #maincontacto {
     background-color: var(--crema);
+    display: flex;
+    flex-direction: row;
+    gap: 250px;
+    padding: 80px 0;
+    justify-content: center;
+}
+
+.huella {
+    display: flex;
+    gap: 20px;
 }
 
 .denunciaimg {
     display: flex;
-    flex-direction: row;
-    gap: 55px;
-    align-items: center;
+    flex-direction: column;
+    gap: 115px;
+    justify-content: space-between;
     padding: 20px;
-    align-items: flex-start;
 }
 
 .denunciatexto {
@@ -295,11 +304,26 @@ footer {
     gap: 8px;
 }
 
-/*input [type= "checkbox"] {
-    width: auto;
-    height: auto;
-}*/
+@keyframes cambiar {
+    0%   { width: 0px; }
+    100% { width: 571px; }
+}
 
+
+.fotosdenuncia {
+    display: flex;
+    flex-direction: column;
+    width: 570px;
+    gap: 20px;
+    img {
+        border-radius: 50px;
+        animation-name: cambiar;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    }
+}
 .formulario {
     display: flex;
     flex-direction: column;
@@ -331,12 +355,3 @@ form {
     flex-direction: column;
 }
 
-.fotosdenuncia {
-    display: flex;
-    flex-direction: column;
-    width: 570px;
-    gap: 40px;
-    img {
-        border-radius: 50px;
-    }
-}
