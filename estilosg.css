@@ -79,10 +79,6 @@ footer a{
     text-decoration: none;
 }
 
-main {
-    margin: 45px;
-}
-
 #footer-index{
     background-color: var(--salmon);
     display: flex;
@@ -228,7 +224,7 @@ p {
     max-width: 580px;
 }
 
-/*NOSOTROS HTML*/
+/*INDEX HTML*/
 
 #mainindex {
     margin: 0;
@@ -241,6 +237,7 @@ p {
     display: flex;
     flex-direction: column;
     gap: 60px;
+    margin: 55px 0 0;
 }
 
 #sobre-nosotros {
@@ -250,6 +247,10 @@ p {
     gap: 20px;
 }
 
+#patitanosotros {
+    position: absolute;
+    left: 170px;
+}
 
 .trama {
     background-image: url(imagenes/iconos/trama.png);
@@ -295,16 +296,11 @@ p {
     max-width: 510px;
 }
 
-
-
-
 /*ADOPTA HTML*/
 
 #main-adopta {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
     gap: 60px;
 }
 
@@ -317,6 +313,11 @@ nav a:hover {
     font-weight: 700;
 }
 
+.historiasinter {
+        display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
 
 .contenedor {
     display: flex;
@@ -334,8 +335,15 @@ nav a:hover {
     background-image: url(imagenes/iconos/forma.png);
     background-repeat: no-repeat;
     background-size: 100%;
+    justify-content: center;
+    margin: 60px 0 0 0;
 }
 
+#patitaadopta {
+    position: absolute;
+    left: 160px;
+    top: 130px;
+}
 
 .texto {
     display: flex;
@@ -347,6 +355,7 @@ nav a:hover {
     display: flex;
     flex-direction: row;
     gap: 48px;
+    justify-content: center;
 }
 
 .prueba {
@@ -417,11 +426,8 @@ nav a:hover {
     display: flex;
     flex-direction: row;
     gap: 48px;
+    justify-content: center;
 }
-
-/*COMO AYUDAR HTML*/
-
-
 
 /*DENUNCIA HTML*/
 
@@ -431,6 +437,7 @@ nav a:hover {
     flex-direction: row;
     gap: 250px;
     justify-content: center;
+    margin: 45px;
 }
 
 .huella {
@@ -438,7 +445,6 @@ nav a:hover {
     gap: 20px;
 }
 
-/*acaaaaaaaaa*/
 .denunciaimg {
     display: flex;
     flex-direction: column;
@@ -447,7 +453,6 @@ nav a:hover {
     padding: 20px 20px 20px 100px;
     position: relative;
 }
-/*acaaaaaaaaa*/
 
 .denunciatexto {
     display: flex;
@@ -535,3 +540,19 @@ form {
     left: 0px;
 }
 
+
+@media screen and (max-width: 500px) {
+
+    .contenedor {
+        padding: 20px 25px;
+    }
+
+    #contacto-index {
+    gap: 60px;
+}
+
+#perroadopcion {
+        content: url('imagenes/img/mobile_index_slide1.jpg');
+    }
+
+}
