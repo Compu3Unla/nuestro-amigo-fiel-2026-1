@@ -32,20 +32,37 @@
         </div>
         <section>
             <h1>¿Cómo ayudar?</h1>
-            <article>
+            <article id="voluntario">
                 <h2>Siendo voluntario</h2>
                 <p>Ser voluntario es ser parte de una comunidad que cree en las segundas oportunidades, en el amor
                     sin condiciones y en el poder de una caricia a tiempo. Detrás de cada tarea hay personas que
                     dedican su tiempo y amor a nuestros amigos. Ser voluntario no solo transforma vidas, también
                     crea experiencias inolvidables y un impacto real.</p>
                 <div class="botones">
-                    <a href="#"><img src="imagenes/iconos/boton-pata.png" width="68" height="68"></a>
-                    <a href="#" class="boton">Quiero ser voluntario</a>
+                    <a href="#popup-tareas"><img src="imagenes/iconos/boton-pata.png" alt="boton del popup"></a>
+
+                    <div id="popup-tareas" class="modal">
+                        <div class="contenido">
+                            <h3>¿Qué tareas haría?</h3>
+                            <h4>Hay muchas formas de colaborar según tus intereses y habilidades.<br>
+                                Podés postularte hoy mismo para:</h4>
+                            <p>Trabajar directo con nuestros amigos</p>
+                            <p>Ayudar en las tareas administrativas</p>
+                            <p>Aportar al mantenimiento del refugio</p>
+                            <a href="#voluntario" class="cerrar">X</a>
+                        </div>
+                    </div>
+                    <a href="#popup-voluntario" class="boton" target="_blank">Quiero ser voluntario</a>
+                    <div id="popup-voluntario" class="modal">
+                        <img src="imagenes/iconos/popup-voluntario.png" width="522" height="290">
+                        <a href="#voluntario" class="cerrar">X</a>
+                    </div>
                 </div>
                 <h3>¡Con tu ayuda, ellos tienen
                     una nueva oportunidad!</h3>
             </article>
-            <img class="bordefotos" src="imagenes/img/comoayudar_1.jpg" alt="voluntario" width="781px" height="373px">
+            <img class="bordefotos animacion-fade" src="imagenes/img/comoayudar_1.jpg" alt="voluntario" width="781px"
+                height="373px">
         </section>
         <section>
             <article>
@@ -54,17 +71,19 @@
                     <p>Apadrinar significa comprometerte con nuestros amigos, ayudándonos a cubrir las necesidades
                         básicas, como alimento y medicación. Vos elegís el monto mensual de tu aporte. Recibirás
                         periódicamente novedades y fotos de cómo estás ayudando. </p>
-                    <a href="#" class="boton">Quiero apadrinar</a>
+                    <a href="https://web.whatsapp.com/" class="boton" target="_blank">Quiero apadrinar</a>
                 </div>
-                <img class="bordefotos" src="imagenes/img/comoayudar_2.jpg" alt="perro" width="780px" height="330px">
+                <img class="bordefotos animacion-fade" src="imagenes/img/comoayudar_2.jpg" alt="perro" width="780px" height="330px">
             </article>
-            <h3>Conocé el proceso para apadrinar</h3>
-            <div>
-                <!--FALTA DATA-->
-            </div>
             <article>
-
+                <h3>Conocé el proceso para apadrinar</h3>
+                <div class="proceso">
+                    <p>1. Realizar un aporte</p>
+                    <p>2. Envías el comprobante</p>
+                    <p>3. Nos ponemos en contacto</p>
+                </div>
             </article>
+
         </section>
         <section>
             <article>
@@ -74,15 +93,28 @@
                     esto solo es posible con las donaciones de nuestros colaboradores, ya que los costos de un lugar
                     como el nuestro es muy alto.</p>
                 <div class="botones">
-                    <a href="#"><img src="imagenes/iconos/boton-pata.png" width="68" height="68"></a>
-                    <a href="#" class="boton">Quiero donar</a>
+                    <a href="#popup-donando"><img src="imagenes/iconos/boton-pata.png" alt="boton del popup"></a>
+
+                    <div id="popup-donando" class="modal">
+                        <div class="contenido">
+                            <h3>¿¿Cuál es su destino?</h3>
+                            <p>Alimentación, medicación y limpieza </p>
+                            <p>Interconsultas con veterinarios externos</p>
+                            <p>Cuidados médicos y rescate de animales</p>
+                            <p>Remuneraciones para veterinarios e infraestructura</p>
+                            <p>Protocolos: controles, estudios y tratamientos</p>
+                            <a href="#voluntario" class="cerrar">X</a>
+                        </div>
+                    <a href="#popup-voluntario" class="boton" target="_blank">Quiero ser voluntario</a>
+                    </div>
                 </div>
                 <h3>¿Cómo podés donar?</h3>
                 <p>Podés donar a través de transferencia bancaria, Mercado Pago o tarjeta
                     de crédito/débito. También podés donar insumos escribiéndonos a info@nuestroamigofiel.com.ar para
                     coordinar la entrega.</p>
             </article>
-            <img class="bordefotos" src="imagenes/img/comoayudar_3.jpg" alt="gato" width="783px" height="340px">
+            <img class="bordefotos animacion-fade" src="imagenes/img/comoayudar_3.jpg" alt="gato" width="783px"
+                height="340px">
         </section>
     </main>
 
@@ -91,22 +123,28 @@
         <ul class="contacto">
             <li>
                 <a href="https://www.instagram.com/asoc.nuestroamigofiel/" target="_blank" class="instagram">
-                    <img class="normal" src="imagenes/iconos/icono-instagram.png" alt="icono instagram" width="24px" height="24px">
-                    <img class="hover" src="imagenes/iconos/icono-instagram-naranja.png" alt="icono instagram" width="24px" height="24px">
+                    <img class="normal" src="imagenes/iconos/icono-instagram.png" alt="icono instagram" width="24px"
+                        height="24px">
+                    <img class="hover" src="imagenes/iconos/icono-instagram-naranja.png" alt="icono instagram"
+                        width="24px" height="24px">
                 </a>
                 <a href="https://www.instagram.com/asoc.nuestroamigofiel/" target="_blank">@nuestroamigofiel</a>
             </li>
             <li>
                 <a href="https://www.facebook.com/NuestroAmigoFiel" target="_blank" class="facebook">
-                    <img class="normal" src="imagenes/iconos/icono-facebook.png" alt="icono facebook" width="25px" height="25px">
-                    <img class="hover" src="imagenes/iconos/icono-facebook-naranja.png" alt="icono facebook" width="25px" height="25px">
+                    <img class="normal" src="imagenes/iconos/icono-facebook.png" alt="icono facebook" width="25px"
+                        height="25px">
+                    <img class="hover" src="imagenes/iconos/icono-facebook-naranja.png" alt="icono facebook"
+                        width="25px" height="25px">
                 </a>
                 <a href="https://www.facebook.com/NuestroAmigoFiel" target="_blank">Nuestro Amigo Fiel</a>
             </li>
             <li>
                 <a href="mailto:info@nuestroamigofiel.com.ar" target="_blank" class="mail">
-                    <img class="normal" src="imagenes/iconos/icono-mail.png" alt="icono mail" width="28px" height="23px">
-                    <img class="hover" src="imagenes/iconos/icono-mail-naranja.png" alt="icono mail" width="28px" height="23px">
+                    <img class="normal" src="imagenes/iconos/icono-mail.png" alt="icono mail" width="28px"
+                        height="23px">
+                    <img class="hover" src="imagenes/iconos/icono-mail-naranja.png" alt="icono mail" width="28px"
+                        height="23px">
                 </a>
                 <a href="mailto:info@nuestroamigofiel.com.ar" target="_blank">info@nuestroamigofiel.com.ar</a>
             </li>
@@ -114,15 +152,19 @@
         <ul class="contacto">
             <li>
                 <a href="tel:1137265450" target="_blank" class="whatsapp">
-                    <img class="normal" src="imagenes/iconos/icono-whatsapp.png" alt="icono whatsapp" width="25px" height="25px">
-                    <img class="hover" src="imagenes/iconos/icono-whatsapp-naranja.png" alt="icono whatsapp" width="25px" height="25px">
+                    <img class="normal" src="imagenes/iconos/icono-whatsapp.png" alt="icono whatsapp" width="25px"
+                        height="25px">
+                    <img class="hover" src="imagenes/iconos/icono-whatsapp-naranja.png" alt="icono whatsapp"
+                        width="25px" height="25px">
                 </a>
                 <a href="tel:1137265450" target="_blank">1137265450</a>
             </li>
             <li>
                 <a href="https://www.youtube.com/user/nuestroamigofielr" target="_blank" class="youtube">
-                    <img class="normal" src="imagenes/iconos/icono-youtube.png" alt="icono youtube" width="28px" height="23px">
-                    <img class="hover" src="imagenes/iconos/icono-youtube-naranja.png" alt="icono youtube" width="28px" height="23px">
+                    <img class="normal" src="imagenes/iconos/icono-youtube.png" alt="icono youtube" width="28px"
+                        height="23px">
+                    <img class="hover" src="imagenes/iconos/icono-youtube-naranja.png" alt="icono youtube" width="28px"
+                        height="23px">
                 </a>
                 <a href="https://www.youtube.com/user/nuestroamigofielr" target="_blank">Nuestro Amigo Fiel</a>
             </li>
