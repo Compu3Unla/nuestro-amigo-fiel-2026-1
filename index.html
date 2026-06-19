@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
-<!--notas-->
 
 <head>
     <meta charset="utf-8" />
-    <title>Nosotros</title>
+    <title>Inicio</title>
     <link rel="stylesheet" href="estilosg.css" type="text/css">
     <link rel="icon" type="image/x-icon" href="imagenes/iconos/favicon.png">
     <link rel="stylesheet" href="swiper/swiper-bundle.min.css">
@@ -16,43 +15,65 @@
 
 <body>
     <header>
-		<div class="contenedor">
-			<a href="index.html">
-				<img src="imagenes/iconos/icono.png" alt="ícono" width="37" height="33">
-			</a>
-			<nav>
-				<a href="nosotros.html">Nosotros</a>
-				<a href="adopta.html">Adoptá</a>
-				<a href="comoayudar.html">¿Cómo ayudar?</a>
-				<a href="denuncia.html">Denunciá</a>
-			</nav>
-		</div>
+        <div class="contenedor">
+            <a href="index.html" target="_self">
+                <div class="isotipo"></div>
+            </a>
+            <nav>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="adopta.html">Adoptá</a>
+                <a href="comoayudar.html">¿Cómo ayudar?</a>
+                <a href="denuncia.html">Denunciá</a>
+            </nav>
+        </div>
     </header>
 
     <main id="mainindex">
-        <img src="imagenes/img/index_slide1.jpg" alt="perrito">
+        <div id="galeria-index" class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="imagenes/img/index_slide1.jpg" alt="perro en adopción">
+                </div>
+                <div class="swiper-slide">
+                    <img src="imagenes/img/index_slide2.jpg" alt="gato en adopción">
+                </div>
+                <div class="swiper-slide">
+                    <img src="imagenes/img/index_slide3.jpg" alt="perro en adopción">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
     </main>
 
     <footer>
         <ul class="gris">
             <li>
-                <a href="http://www.instagram.com/lulic_design?igsh=MWIyaWJsNm51OXBpMw==" target="_blank"
-                    rel="#">
+                <a href="http://www.instagram.com/lulic_design?igsh=MWIyaWJsNm51OXBpMw==" target="_blank" rel="#">
                     <img class="ignormal" src="img/instagramvioleta.png" alt="instagram" width="25" height="25">
                     <img class="ighover" src="img/instagramhover.png" alt="instagram" width="25" height="25">
                     Instagram
                 </a>
             </li>
             <li>
-                <a href="mailto:lucianacarrera2605@gmail.com?subject=Hola%luciana" target="_top"
-                    rel="#">
+                <a href="mailto:lucianacarrera2605@gmail.com?subject=Hola%luciana" target="_top" rel="#">
                     <img class="gmnormal" src="img/gmailvioleta.png" alt="g-mail" width="25" height="25">
                     <img class="gmhover" src="img/gmailhover.png" alt="g-mail" width="25" height="25">
                     Gmail
                 </a>
-            </li> 
+            </li>
         </ul>
     </footer>
+    <script src="swiper/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('#galeria-index', {
+            loop: true,
+
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
 </body>
 
 </html>

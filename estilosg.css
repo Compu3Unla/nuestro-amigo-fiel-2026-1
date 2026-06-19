@@ -23,6 +23,18 @@ header {
     height: 77px;
 }
 
+.isotipo{
+    background-image: url(imagenes/iconos/icono.png);
+    width: 37px;
+    height: 33px;
+}
+
+.isotipo:hover{
+    background-image: url(imagenes/iconos/icono-naranja.png);
+    width: 37px;
+    height: 33px;
+}
+
 nav {
     display: flex;
     gap: 25px;
@@ -42,6 +54,10 @@ body {
     top:130px;
     left:60px;
     z-index:10;
+}
+
+.bordefotos{
+    border-radius: 50px;
 }
 
 /*tipografías*/
@@ -81,6 +97,13 @@ p {
 
 /*NOSOTROS HTML*/
 
+#mainindex{
+    margin: 0;
+    background-color: var(--salmon);
+}
+
+/*NOSOTROS HTML*/
+
 #main-nosotros{
     display: flex;
     flex-direction: column;
@@ -93,9 +116,7 @@ p {
     flex-wrap: wrap;
     gap: 20px;
 }
-.bordefotos{
-    border-radius: 50px;
-}
+
 
 #trama{
     background-image: url(imagenes/iconos/trama.png);
