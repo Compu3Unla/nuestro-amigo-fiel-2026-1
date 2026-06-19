@@ -46,15 +46,8 @@ body {
 }
 
 #main-nosotros,
-#main-adopta,
-#maincontacto {
+#main-adopta {
     padding-bottom: 80px;
-}
-
-#patita {
-    position: absolute;
-    top: 20px;
-    left: 20px;
 }
 
 .bordefotos {
@@ -84,6 +77,10 @@ footer li{
 
 footer a{
     text-decoration: none;
+}
+
+main {
+    margin: 45px;
 }
 
 #footer-index{
@@ -254,7 +251,7 @@ p {
 }
 
 
-#trama {
+.trama {
     background-image: url(imagenes/iconos/trama.png);
     background-repeat: repeat;
     width: 100%;
@@ -530,5 +527,11 @@ form {
     display: flex;
     gap: 10px;
     flex-direction: column;
+}
+
+#patitadenuncia {
+    position: absolute;
+    top: 20px;
+    left: 0px;
 }
 
