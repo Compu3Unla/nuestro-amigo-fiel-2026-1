@@ -70,16 +70,16 @@ footer {
     gap: 20px;
 }
 
-footer li{
+footer li {
     display: flex;
     gap: 10px;
 }
 
-footer a{
+footer a {
     text-decoration: none;
 }
 
-#footer-index{
+#footer-index {
     background-color: var(--salmon);
     display: flex;
     justify-content: center;
@@ -314,7 +314,7 @@ nav a:hover {
 }
 
 .historiasinter {
-        display: flex;
+    display: flex;
     flex-direction: column;
     gap: 40px;
 }
@@ -392,7 +392,7 @@ nav a:hover {
     display: none;
     position: fixed;
     inset: 0;
-    background: rgba(0,0,0,0.7);
+    background: rgba(0, 0, 0, 0.7);
 }
 
 .modal:target {
@@ -420,7 +420,8 @@ nav a:hover {
     color: black;
     font-size: 20px;
     display: flex;
-    justify-content: flex-end;}
+    justify-content: flex-end;
+}
 
 .historias {
     display: flex;
@@ -464,6 +465,7 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     gap: 30px;
+
     div {
         display: flex;
         flex-direction: column;
@@ -482,6 +484,7 @@ nav a:hover {
         opacity: 0;
         transform: scale(0.5);
     }
+
     100% {
         opacity: 1;
         transform: scale(1);
@@ -540,14 +543,28 @@ form {
     left: 0px;
 }
 
-
 @media screen and (max-width: 500px) {
+
+    footer {
+        li {
+            a {
+                display: none;
+            }
+        }
+
+        gap: 40px;
+    }
+
+    .contacto {
+        flex-direction: row;
+        gap: 40px;
+    }
 
     h2 {
         font-size: 38px;
     }
 
-/*nosotros.html_media500px*/
+    /*nosotros.html_media500px*/
     #patitanosotros {
         display: none;
     }
@@ -564,7 +581,7 @@ form {
         gap: 40px;
     }
 
-/*denuncia.html_media500px*/
+    /*denuncia.html_media500px*/
 
     .contenedor {
         padding: 20px 25px;
