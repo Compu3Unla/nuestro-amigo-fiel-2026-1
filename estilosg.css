@@ -243,13 +243,13 @@ p {
 #sobre-nosotros {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    align-items: flex-start;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 #patitanosotros {
-    position: absolute;
-    left: 170px;
+    padding: 0px 10px 0px 0px;
 }
 
 .trama {
@@ -261,9 +261,9 @@ p {
 
 #mision-equipo-nosotros {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 180px;
     flex-wrap: wrap;
-    gap: 20px;
 }
 
 #mision-equipo-nosotros article {
@@ -340,9 +340,7 @@ nav a:hover {
 }
 
 #patitaadopta {
-    position: absolute;
-    left: 160px;
-    top: 130px;
+    align-self: flex-start;
 }
 
 .texto {
@@ -436,6 +434,7 @@ nav a:hover {
     background-color: var(--crema);
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 250px;
     justify-content: center;
     margin: 45px;
@@ -555,16 +554,29 @@ form {
         gap: 40px;
     }
 
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+        font-size: 38px;
+    }
+
+.contenedor {
+        padding: 20px 15px;
+    }
+
     .contacto {
         flex-direction: row;
         gap: 40px;
     }
 
-    h2 {
-        font-size: 38px;
-    }
-
     /*nosotros.html_media500px*/
+
+#mision-equipo-nosotros article {
+    gap: 40px;
+}
+
     #patitanosotros {
         display: none;
     }
@@ -583,9 +595,7 @@ form {
 
     /*denuncia.html_media500px*/
 
-    .contenedor {
-        padding: 20px 25px;
-    }
+    
 
     #contacto-index {
         gap: 60px;
