@@ -543,16 +543,86 @@ form {
 
 @media screen and (max-width: 500px) {
 
+    h2 {
+        font-size: 38px;
+    }
+
+/*nosotros.html_media500px*/
+    #patitanosotros {
+        display: none;
+    }
+
+    #sobre-nosotros {
+        margin: 0px 35px 25px 40px;
+    }
+
+    #mision-equipo-nosotros {
+        margin: 0px 35px 25px 40px;
+    }
+
+    #main-nosotros {
+        gap: 40px;
+    }
+
+/*denuncia.html_media500px*/
+
     .contenedor {
         padding: 20px 25px;
     }
 
     #contacto-index {
-    gap: 60px;
-}
+        gap: 60px;
+    }
 
-#perroadopcion {
+    #perroadopcion {
         content: url('imagenes/img/mobile_index_slide1.jpg');
     }
 
+    #maincontacto {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 25px 25px 10px;
+        gap: 20px;
+    }
+
+    .formulario {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info-checkbox {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .nombre-fecha-telefono {
+        gap: 20px;
+    }
+
+    #patitadenuncia {
+        display: none;
+    }
+
+    .denunciaimg {
+        padding: 20px 25px;
+        gap: 55px;
+    }
+
+    textarea {
+        height: 100px;
+        width: 400px;
+    }
+
+    .nombre-fecha-telefono {
+        input {
+            width: 400px;
+        }
+    }
+
+    .fotosdenuncia {
+        width: 100%;
+    }
+
+    /*trabajos.html_media500px*/
 }
