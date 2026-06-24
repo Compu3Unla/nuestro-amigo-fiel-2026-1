@@ -8,6 +8,10 @@
     --azul: #172C43;
 }
 
+html {
+    height: 100%;
+}
+
 * {
     font-family: "Instrument Sans", sans-serif;
     font-size: 16px;
@@ -43,6 +47,9 @@ nav {
 body {
     background-color: var(--crema);
     min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 #main-nosotros,
@@ -52,6 +59,21 @@ body {
 
 .bordefotos {
     border-radius: 50px;
+}
+
+.fijo {
+    background-color: var(--celeste);
+    position: fixed;
+    top: 45%;
+    left: 0%;
+    padding: 20px 25px 20px 10px;
+    border-radius: 0 50px 50px 0;
+}
+
+.fijo-ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 
@@ -189,6 +211,7 @@ footer a {
     display: block;
 }
 
+
 /*tipografías*/
 
 h1,
@@ -226,24 +249,31 @@ p {
 
 /*INDEX HTML*/
 
+#body-index {
+    display: flex;
+    flex-direction: column;
+}
+
 #mainindex {
     margin: 0;
     background-color: var(--salmon);
+    flex: 1;
+    overflow: hidden;
 }
 
-.fijo{
-    background-color: var(--celeste);
-    position: fixed;
-    top: 45%;
-    left:0%;
-    padding: 20px 25px 20px 10px;
-    border-radius: 0 50px 50px 0;
+#galeria-index {
+    height: 100%;
 }
 
-.fijo-ul{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.swiper-wrapper,
+.swiper-slide {
+    height: 100%;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /*NOSOTROS HTML*/
@@ -264,7 +294,7 @@ p {
 }
 
 #patitanosotros {
-padding: 0 10px 0 0;
+    padding: 0 10px 0 0;
 }
 
 .trama {
@@ -385,7 +415,8 @@ nav a:hover {
 }
 
 .boton {
-    width: 420px;
+    max-width: 420px;
+    width: 100%;
     font-size: 26px;
     display: flex;
     justify-content: center;
@@ -442,6 +473,46 @@ nav a:hover {
     flex-direction: row;
     gap: 48px;
     justify-content: center;
+}
+
+.adoptar,
+.agranda,
+.historias {
+    flex-wrap: wrap;
+}
+
+/*COMO AYUDAR HTML*/
+
+#comoayudar-main {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    align-items: center;
+}
+
+#como {
+    display: flex;
+    gap: 48px;
+    justify-content: center;
+    margin: 60px 0 0 0;
+}
+
+#div-voluntario1 {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+#div-voluntario2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+}
+
+#voluntario {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
 
 /*DENUNCIA HTML*/
@@ -570,15 +641,15 @@ form {
         gap: 40px;
     }
 
-h1 {
-    font-size: 50px;
-}
+    h1 {
+        font-size: 50px;
+    }
 
-h2 {
+    h2 {
         font-size: 38px;
     }
 
-.contenedor {
+    .contenedor {
         padding: 20px 15px;
     }
 
@@ -589,9 +660,9 @@ h2 {
 
     /*nosotros.html_media500px*/
 
-#mision-equipo-nosotros article {
-    gap: 40px;
-}
+    #mision-equipo-nosotros article {
+        gap: 40px;
+    }
 
     #patitanosotros {
         display: none;
@@ -611,7 +682,7 @@ h2 {
 
     /*denuncia.html_media500px*/
 
-    
+
 
     #contacto-index {
         gap: 60px;
@@ -665,6 +736,61 @@ h2 {
 
     .fotosdenuncia {
         width: 100%;
+    }
+
+    .denunciaimg {
+        padding: 20px 15px;
+    }
+
+    p {
+        max-width: 100%;
+    }
+
+    textarea,
+    input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    video {
+        max-width: 400px;
+    }
+
+    .bordefotos {
+        width: 100%;
+        height: auto;
+    }
+
+    #mision-equipo-nosotros {
+        gap: 50px;
+    }
+
+    #patitaadopta {
+        display: none;
+    }
+
+    .adoptar,
+    .agranda,
+    .historias {
+        margin: 0 35px 25px 40px;
+    }
+
+    .texto {
+        margin: 30px 0 0 0;
+
+        h1 {
+            max-width: 300px;
+        }
+    }
+
+    #botonformulario {
+        font-size: 20px;
+        display: flex;
+        align-items: center;
     }
 
     /*trabajos.html_media500px*/
