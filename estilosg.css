@@ -231,6 +231,21 @@ p {
     background-color: var(--salmon);
 }
 
+.fijo{
+    background-color: var(--celeste);
+    position: fixed;
+    top: 45%;
+    left:0%;
+    padding: 20px 25px 20px 10px;
+    border-radius: 0 50px 50px 0;
+}
+
+.fijo-ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 /*NOSOTROS HTML*/
 
 #main-nosotros {
@@ -245,11 +260,11 @@ p {
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
+    align-items: flex-start;
 }
 
 #patitanosotros {
-    position: absolute;
-    left: 170px;
+padding: 0 10px 0 0;
 }
 
 .trama {
@@ -261,9 +276,9 @@ p {
 
 #mision-equipo-nosotros {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 180px;
 }
 
 #mision-equipo-nosotros article {
@@ -340,9 +355,8 @@ nav a:hover {
 }
 
 #patitaadopta {
-    position: absolute;
-    left: 160px;
-    top: 130px;
+    align-self: flex-start;
+
 }
 
 .texto {
@@ -439,6 +453,7 @@ nav a:hover {
     gap: 250px;
     justify-content: center;
     margin: 45px;
+    flex-wrap: wrap;
 }
 
 .huella {
@@ -555,16 +570,29 @@ form {
         gap: 40px;
     }
 
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+        font-size: 38px;
+    }
+
+.contenedor {
+        padding: 20px 15px;
+    }
+
     .contacto {
         flex-direction: row;
         gap: 40px;
     }
 
-    h2 {
-        font-size: 38px;
-    }
-
     /*nosotros.html_media500px*/
+
+#mision-equipo-nosotros article {
+    gap: 40px;
+}
+
     #patitanosotros {
         display: none;
     }
@@ -583,9 +611,7 @@ form {
 
     /*denuncia.html_media500px*/
 
-    .contenedor {
-        padding: 20px 25px;
-    }
+    
 
     #contacto-index {
         gap: 60px;
